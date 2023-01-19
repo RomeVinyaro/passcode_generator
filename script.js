@@ -1,3 +1,32 @@
+let box = ""
+let passwords = ""
+
+const getPasswordOptions = {
+  upperCased:"ABCDEFGHIJKLMNOPQRSTUVWXYZ", 
+  lowerCased:"abcdefghijklmnopqrstuvwxyz",
+  numbers:"0123456789",
+  specialChar:"~!@#$%^&*()_+{}<>?-=./"
+}
+function generatePassword () {
+
+  let length = prompt("Choose password length")
+  if (length > 8 && length < 129) {
+  }
+  else {
+alert("Value must be inbetween 8 and 129")
+  return null}
+
+let capital = confirm("Password requires Uppercased letter")
+if (capital) {
+  box = box + getPasswordOptions.upperCased;
+}
+
+  
+}
+
+
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
