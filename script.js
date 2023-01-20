@@ -21,6 +21,22 @@ if (capital) {
   box = box + getPasswordOptions.upperCased;
 }
 
+let lower = confirm("Password requires Lowercased letter")
+if (lower) {
+  box = box + getPasswordOptions.lowerCased;
+}
+
+let num = confirm("Password requires Number")
+if (num) {
+  box = box + getPasswordOptions.numbers;
+}
+
+let special = confirm("Password requires Special character")
+if (special) {
+  box = box + getPasswordOptions.specialChar;
+}
+
+
   
 }
 
